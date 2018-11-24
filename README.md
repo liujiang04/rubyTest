@@ -13,3 +13,7 @@ gem install mysql2  安装后 重启才能看见  不知道为什么
 
 gem install write_xlsx
 
+
+**rails**
+gem install rails
+

@@ -6,3 +6,6 @@
 .idea/
 *.xlsx
 *.xls
+
+
+/rails_demo/tmp/*
