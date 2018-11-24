@@ -4,4 +4,5 @@
 /.idea/sanguo-py.iml
 .idea
 .idea/
-
+*.xlsx
+*.xls
