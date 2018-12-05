@@ -17,3 +17,20 @@ gem install write_xlsx
 **rails**
 gem install rails
 
+
+
+**in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'tz**
+
+cd rails_demo 
+
+bundle install
+
+把 gemfile 里面 的 source 'https://rubygems.org' 改为 source 'http://rubygems.org'
+Gemfile sources and change 'https' to 'http'.
+再次 
+bundle install
+
+运行 rails_demo
+
+
+
