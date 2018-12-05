@@ -105,8 +105,8 @@ for i in 0..5
 end
 # 等价于 下面的 i  就是 0-5 里面的内容  好像 这样些 更好
 
-(0..5).each do |i|
-  puts "each do 局部变量的值为 #{i}"
+(8..10).each do |i|
+  puts i
 end
 
 
