@@ -5,4 +5,19 @@ class ApplicationController < ActionController::Base
     render html: "hello, world!"
   end
 
+
+  def hello1
+    render html: "hello, world!1"
+  end
+
+
+  def hello2
+    render html: "hello, world!2"
+  end
+
+    # def hello
+  #   render text: "!!!!!!!!!"
+  # end
+
+
 end
