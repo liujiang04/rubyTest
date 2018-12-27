@@ -90,7 +90,7 @@ if __FILE__ == $0
   system 'svn add ' + $SVNPATH + 'ccbTranslate.xls'
   system 'svn add ' + $SVNPATH + 'coffeeTranslate.xls'
   system 'svn status ' + $SVNPATH
-  system 'svn commit ' + $SVNPATH + ' -m "update" '
+  system 'svn commit ' + $SVNPATH + ' -m "auto upload" '
   puts "svn commit success"
 
   #!!! exec 执行 会阻断代码  system 不会
