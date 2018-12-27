@@ -6,13 +6,15 @@
   <script src="assets/jquery-3.3.1.js" ></script>
 </head>
 <body>
+<h1 id = "count"> </h1>
+
 <script>
-    // 测试 go 传输 性能  macmini 30 fps 每一帧 200k  无压力
+    // 测试 ruby 传输 性能  macmini 30 fps 每一帧 200k  无压力 和 go 差不多 ！！ 关闭 log  要不会卡死
     var all = []
     const eng = 'qwertyuiopasdfghjklzxcvbnm'.split("")
     function getStr() {
         var str = ''
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < 200000; i++) {
             str = eng[Math.floor(Math.random() * 26)] + str
         }
         return str
@@ -21,7 +23,7 @@
     function post(id, cont) {
         $.ajax({
             type: "POST",
-            url: "http://127.0.0.1:3000/post_txt",
+            url: "http://127.0.0.1:3000/welcome/post_txt",
             data: {username: idx, content: cont},
             dataType: "json",
             success: function (data) {
@@ -48,7 +50,7 @@
         });
     }
 
-    var FPS = 1 //使用30 fps 比较合适  直接能成功
+    var FPS = 30 //使用30 fps 比较合适  直接能成功
 
     var isBegin = false
     var time = new Date()
@@ -59,6 +61,8 @@
     var begin = function () {
         timer = setInterval(function () {
             all.push(getStr())
+            $("#count").text("剩余 " + all.length + "条 未上传 ")
+            
             count++
             if (!isBegin) {
                 post(idx, all[0])

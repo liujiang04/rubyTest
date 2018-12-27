@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   #post 'welcome/post_txt'
-  get "welcome/post_txt" => "welcome#post_txt"
+  post "welcome/post_txt"
+
+
+  #resources :welcome, :path_names => { :new => 'post_txt', :edit => 'change' }
 
 end
 

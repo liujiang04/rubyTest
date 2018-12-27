@@ -5,8 +5,13 @@
 .idea
 .idea/
 *.xlsx
+*.pyc
 *.xls
-
+*.xls
+*.png
+*.jpg
+*.txt
+*.json
 
 /rails_demo/tmp/*
 /rails_demo/*.rakeTasks

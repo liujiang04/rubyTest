@@ -52,6 +52,9 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  #设置 debug  模式下的log 等级  什么都不打印  除非 强制使用  puts
+  config.log_level = :unknown
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
