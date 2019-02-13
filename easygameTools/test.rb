@@ -19,12 +19,16 @@ sss = 'a'
 puts File.basename(fileName)
 puts File.dirname(fileName)
 puts "fsdafs".sub!(/[#{sss}]/, '######')
-def mkDir(path)
-  if !File.directory?(path)
-    Dir.mkdir("#{File.expand_path(path)}")#创建tar目录
-    #Dir.mkdir(path,:mode=>0777)
-  end
-end
+puts "fsdafs".include?"afs"
+
+
+
+# def mkDir(path)
+#   if !File.directory?(path)
+#     Dir.mkdir("#{File.expand_path(path)}")#创建tar目录
+#     #Dir.mkdir(path,:mode=>0777)
+#   end
+# end
 
 ff = "/Users/admin/Documents/ljworkspace/local/cocos/assets/pikachu/sanguo/art_pikachu/翻译美术图（英文）/所有的psd/art_pikachu俄文版/UI/ani_tuichu.psd"
 dd = "/Users/admin/Documents/ljworkspace/local/cocos/assets/pikachu/sanguo/art_pikachu/翻译美术图（英文）/所有的psd"
@@ -33,4 +37,12 @@ dd = "/Users/admin/Documents/ljworkspace/local/cocos/assets/pikachu/sanguo/art_p
 #ff.gsub(/[#{dd}]/, '')
 ff[dd]=""
 puts ff
+
+scriptStr = 'RES_CONFIG_PATH:"default.res_fe0b8.json",'
+# dd = scriptStr.split(":")
+# puts dd[1].gsub(/["]/, '').gsub(/[,\n]/, '')
+scriptStr
+
+
+
 
